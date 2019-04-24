@@ -14,6 +14,7 @@ public class email {
 		String emailKey = "";
 		while(email.charAt(i) != '@'){
 			emailKey += email.charAt(i);
+			i++;
 	}
 	
 	public void displayEmail() {
