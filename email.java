@@ -17,10 +17,10 @@ public class email {
 		System.out.println(email);
 	}
 	
-	public void newEmail() {
-		Scanner newE = new Scanner(System.in);
-		System.out.println("Enter a new email.");
-		email = newE.next();
+	public void newEmail(String e) {
+// 		Scanner newE = new Scanner(System.in);
+// 		System.out.println("Enter a new email.");
+		email = e;
 	}
 	
 	public void changeEmail() {
