@@ -9,10 +9,10 @@ public class password {
 		return password;
 	}
 	
-	public void newPassword() {
-		Scanner newP = new Scanner(System.in);
-		System.out.println("Enter a new password.");
-		password = newP.next();
+	public void newPassword(String p) {
+		//Scanner newP = new Scanner(System.in);
+		//System.out.println("Enter a new password.");
+		password = p;
 	}
 	
 	public void changePassword() {
