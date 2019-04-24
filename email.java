@@ -10,7 +10,10 @@ public class email {
 	}
 	
 	public int getKey() {
-		//convert email to a specific ID/ascii number
+		int i = 0;
+		String emailKey = "";
+		while(email.charAt(i) != '@'){
+			emailKey += email.charAt(i);
 	}
 	
 	public void displayEmail() {
