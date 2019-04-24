@@ -28,10 +28,10 @@ public class email {
 	}
 	
 	public void changeEmail() {
-		if (email == "") {
-			System.out.println("You don't have an email saved to your account.");
-			newEmail();
-		else {
+		//if (email == "") {
+		//	System.out.println("You don't have an email saved to your account.");
+		//	newEmail();
+		//else {
 			Scanner changeE = new Scanner(System.in);
 			System.out.println("Enter your current email to change it.");
 			if (changeE == email){
