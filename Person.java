@@ -32,6 +32,10 @@ public class Person {
         return email.getEmail();
     }
 
+    public String getEmailKey() {
+        return email.getKey();
+    }
+
     public int getYear() {
         return gradYear.getYear();
     }
@@ -71,4 +75,8 @@ public class Person {
     public void displayEvents() {
         events.displayEvents();
     }
+}
+
+class PersonTest {
+    Person me = new Person("Justin", "T", "jturbevil", 2022, "password");
 }
