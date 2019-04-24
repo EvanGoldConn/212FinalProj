@@ -33,4 +33,22 @@ public class HashTable{
 
 	}
 
+	public String deleteAccount(Person person){
+		int key = person.getEmailKey();
+		int hashKey = hornerHash(key);
+		table[hashKey] = null;
+	}
+
+}
+
+
+class hashTest{
+	public static void main(String[] args){
+		
+
+
+
+
+		
+	}
 }
