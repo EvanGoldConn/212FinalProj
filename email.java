@@ -27,22 +27,9 @@ public class email {
 		email = e;
 	}
 	
-	public void changeEmail() {
-		//if (email == "") {
-		//	System.out.println("You don't have an email saved to your account.");
-		//	newEmail();
-		//else {
-			Scanner changeE = new Scanner(System.in);
-			System.out.println("Enter your current email to change it.");
-			if (changeE == email){
-				Scanner change = new Scanner(System.in);
-				System.out.println("Change email to: ");
-				email = change.next();
-			}
-			else {
-				System.out.println("Incorrect email.");
-				changeEmail();
-			}
-		}
+	public void changeEmail(String newE) {
+		email = newE;
+		System.out.print("Your email was successfully changed to: " + email)
+		}	
 	}
 }
