@@ -29,7 +29,7 @@ public class email {
 	
 	public void changeEmail(String newE) {
 		email = newE;
-		System.out.print("Your email was successfully changed to: " + email)
+		System.out.print("Your email was successfully changed to: " + email);
 		}	
 	}
 }
