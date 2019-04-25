@@ -15,22 +15,19 @@ public class password {
 		password = p;
 	}
 	
-	public void changePassword() {
-		if (password == "") {
-			System.out.println("You don't have a password.");
-			newPassword();
+	public void changePassword(String newP) {
+		/*Scanner changeP = new Scanner(System.in);  //should go in the main method
+		System.out.println("Enter your current password to change it.");
+		if (changeP == password){
+			Scanner change = new Scanner(System.in);
+			System.out.println("Change password to: ");
+			password = change.next();
+		}
 		else {
-			Scanner changeP = new Scanner(System.in);
-			System.out.println("Enter your current password to change it.");
-			if (changeP == password){
-				Scanner change = new Scanner(System.in);
-				System.out.println("Change password to: ");
-				password = change.next();
-			}
-			else {
-				System.out.println("Incorrect password.");
-				changePassword();
-			}
+			System.out.println("Incorrect password.");
+			changePassword(); */
+		password = newP;
+		System.out.print("Your password was successfully changed to: " + password);
 		}
 	}
 }
