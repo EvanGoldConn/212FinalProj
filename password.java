@@ -17,6 +17,7 @@ public class password {
 	
 	public void changePassword(String newP) {
 		/*Scanner changeP = new Scanner(System.in);  //should go in the main method
+							//something similar for the email too
 		System.out.println("Enter your current password to change it.");
 		if (changeP == password){
 			Scanner change = new Scanner(System.in);
