@@ -39,13 +39,28 @@ class ConnBookMain{
 
 		ConnBook book = new ConnBook();
 		book.addPerson("Justin", "T", "jturbevil@conncoll.edu", 2022, "password");
+		book.addPerson("Evan", "Goldsmith", "egoldsmi@conncoll.edu", 2022, "myPassword");
+		book.addPerson("Zack", "Beucler", "zbeucler@conncoll.edu", 2022, "zacksPass");
+		book.addPerson("William", "Tarimo", "wtarimo@conncoll.edu", 2005, "tarimoPass");
 		//how do we access the person object thats located in the hash table, in order to get all the methods in Person.java?
 		Person justin = book.login("jturbevil@conncoll.edu", "password");
-		System.out.println(justin.getLastName());
-		justin.addTimelinePost("This finally works!", "Justin");
-		justin.addTimelinePost("I'm hungry!", "Justin");
-		justin.addTimelinePost("Testing...", "Justin!");
-		justin.displayTimeline(5);
+		Person evan = book.login("egoldsmi@conncoll.edu", "myPassword");
+		// System.out.println(evan.getFirstName());
+		// System.out.println(justin.getLastName()+" "+justin.getFirstName());
+		// justin.addTimelinePost("This finally works!", "Justin");
+		// justin.addTimelinePost("I'm hungry!", "Justin");
+		// justin.addTimelinePost("Testing...", "Justin!");
+		// justin.displayTimeline(5);
+		// System.out.println(justin.getEmail());
+		// System.out.println(justin.getYear());
+		// System.out.println(justin.getPassword());
+		// System.out.println(justin.getEmailKey
+		justin.addFriend("egoldsmi@conncoll.edu");
+		justin.addFriend("zbeucler@conncoll.edu");
+		justin.addFriend("wtarimo@conncoll.edu");
+		// justin.showFriends();
+		justin.removeFriend("zbeucler@conncoll.edu");
+		justin.showFriends();
 
 
 	}
