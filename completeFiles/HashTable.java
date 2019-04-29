@@ -12,7 +12,7 @@ public class HashTable{
 
 	private int helper(char c){
 		int code = 0;
-		for(int i = 1; i < 27; i++){
+		for(int i = 1; i < 26; i++){
 			if(c == letters[i]){
 				code = i;
 				i = 28;

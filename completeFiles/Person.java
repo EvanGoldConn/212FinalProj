@@ -8,7 +8,7 @@ public class Person {
     private String email;
     private String pass;
     private Timeline timeline;
-    private TempFriends friends;
+    private BSTFriends friends;
 
     public Person(String f, String l, String e, int y, String p) {
         firstName = f;
@@ -21,7 +21,7 @@ public class Person {
         // pass.newPassword(p);
         pass = p;
         timeline = new Timeline();
-        friends = new TempFriends();
+        friends = new BSTFriends();
     }
 
     public String getFirstName() {
@@ -83,16 +83,26 @@ public class Person {
         timeline.loginTimeline();
     }
 
-    public void addFriend(Person p) {
-        friends.addFriend(p);
+    public void addFriend(String email) {
+        int i = 0;
+        String emailKey = "";
+        while(email.charAt(i) != '@'){
+            emailKey += email.charAt(i);
+            i++;
+        }
+        friends.addFriend(emailKey);
     }
 
-    public void findFriend(String f, String l) {
-        friends.find(f, l);
+    public void findFriend(String key) {
+        friends.find(key, friends.root());
     }
 
-    public Person removeFriend(String f, String l) {
-        return friends.remove(f, l);
+    public void removeFriend(String key) {
+        friends.remove(key);
+    }
+
+    public void showFriends(){
+        friends.inOrder(friends.root());
     }
 
     public void insertEvent(Calendar date, String event) {
